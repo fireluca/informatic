@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+< html  lang =" it " >
+< testa >
+< metacarattere  =" UTF -8 " >
+< meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+< meta  name =" viewport " content =" width=device-width, initial-scale=1.0 " >
+< titolo > 2 dadi </ titolo >
+
+
+
+</ testa >
+< corpo >
+
+< script >
+funzione  tiro ( ) {
+    documento . getElementById ( "1" ) . innerHTML  =  dado1 ( 6 ) ;
+    documento . getElementById ( "2" ) . innerHTML  =  dado2 ( 6 ) ;
+    ritorno  dado1 ( n ) ;
+    ritorno  dado2 ( n ) ;
+    }  
+   funzione  dado1 ( n )
+    {
+    a = 0 ;
+    a = matematica . floor ( ( Math . random ( ) * n ) +1 ) ; _
+    restituire  un ;
+    }
+    funzione  dado2 ( n )
+    {
+    b = 0 ;
+    b = matematica . floor ( ( Math . random ( ) * n ) +1 ) ; _
+    ritorno  b ;
+    }
+</ copione >
+< p > 1°dado: </ p > < p  id =" 1 " > </ p >
+< p > 2°dado: </ p > < p  id =" 2 " > </ p >
+< button  onclick = " return tiro() " > Clicca qua per tirare 2 dadi </ button >
+
+</ corpo >
+</ html >
