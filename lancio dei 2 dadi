@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+< html  lang =" it " >
+< testa >
+< metacarattere  =" UTF -8 " >
+< meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+< meta  name =" viewport " content =" width=device-width, initial-scale=1.0 " >
+< titolo > 2 dadi </ titolo >
+
+
+
+</ testa >
+< corpo >
+< script >
+    lascia  girare = 0 ;
+funzione  tiro ( tur ) {
+    giro  =  tu ;
+    var  dad1  = dado1 ( 6 ) ;
+    var  dad2  = dado2 ( 6 ) ;
+    documento . getElementById ( "1" ) . HTML interno = dad1  ; 
+    documento . getElementById ( "2" ) . HTML interno = dad2  ; 
+    giro =  tu + 1 ;
+    se  ( papà1 == papà2 ) {
+        alert ( "Complimenti, hai vinto in" + turni + "turno!" ) ;
+        giro  = 0
+    } ;
+    ritorno  turni
+    } ;
+   funzione  dado1 ( n )
+    {
+    a = 0 ;
+    a = matematica . floor ( ( Math . random ( ) * n ) +1 ) ; _
+    restituire  un ;
+    } ;
+    funzione  dado2 ( n )
+    {
+    b = 0 ;
+    b = matematica . floor ( ( Math . random ( ) * n ) +1 ) ; _
+    ritorno  b ;
+    } ;
+    
+</ copione >
+< p > dado 1: </ p > < p  id =" 1 " > </ p >
+< p > dado 2: </ p > < p  id =" 2 " > </ p >
+< button   onclick = " return tiro(turni) " > Clicca qua per tirare 2 dadi </ button >
+
+</ corpo >
+</ html >
