@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+< html  lang =" it " >
+< testa >
+    < metacarattere  =" UTF -8 " >
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" viewport " content =" width=device-width, initial-scale=1.0 " >
+    < titolo > 4 bottoni </ titolo >
+    < stile >
+        . b1 {
+            colore di sfondo :  rgb ( 140 ,  0 ,  255 );
+            larghezza :  50 px ;
+            altezza :  50 px ;
+        }
+        . b2 {
+            colore di sfondo :  rgb ( 183 ,  186 ,  199 );
+            larghezza :  50 px ;
+            altezza :  50 px ;
+        }
+        . b3 {
+            colore di sfondo :  rgb ( 255 ,  0 ,  0 );
+            larghezza :  50 px ;
+            altezza :  50 px ;
+        }
+        . b4 {
+            colore di sfondo :  rgb ( 229 ,  255 ,  0 );
+            larghezza :  50 px ;
+            altezza :  50 px ;
+        }
+    </ stile >
+    < script >
+        funzione  resto1 ( ) {
+            avviso ( "1" ) ;
+        }
+        funzione  resto2 ( ) {
+            avviso ( "2" ) ;
+        }
+        funzione  resto3 ( ) {
+            avviso ( "3" ) ;
+        }
+        funzione  resto4 ( ) {
+            avviso ( "4" ) ;
+        }
+    </ copione >
+</ testa >
+< corpo >
+   < button  type =" button " class =" b1 " onclick =" return rest1() " > 1 </ button >
+   < button  type =" button " class =" b2 " onclick =" return rest2() " > 2 </ button >
+   < button  type =" button " class =" b3 " onclick =" return rest3() " > 3 </ button >
+   < button  type =" button " class =" b4 " onclick =" return rest4() " > 4 ​​</ button >
+</ corpo >
+</ html >
