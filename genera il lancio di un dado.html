@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+< html  lang =" it " >
+< testa >
+    < metacarattere  =" UTF -8 " >
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" viewport " content =" width=device-width, initial-scale=1.0 " >
+    < link  rel =" foglio di stile " href =" ./css/palladino.css " >
+   
+    < title > Lancio Di un dado </ title >
+   
+</ testa >
+< corpo >
+   
+
+< button  class =" button " onclick =" lanciodado() " > lancia il dado </ button >
+
+< p > Numero casuale: </ p >
+< p  class =" rosso " id =" out1 " > </ p >
+
+< p > numero casuale *10: </ p >
+< p  class =" rosso " id =" out2 " > </ p >
+
+< p > Prendo la parte intera </ p >
+< p  class =" rosso " id =" out3 " > </ p >
+
+
+
+< script >
+     funzione  lanciodado ( )  {
+      lascia  casuale = 0 ;
+      lascia  dado = 0 ;
+      lascia  parteintera = 0 ;
+      casuale = matematica . casuale ( ) ;
+     
+
+    dado = casuale * 6 ;
+    parteintera = matematica . tondo ( dado ) + 1 ;
+
+     //compreso tra 0 ed 1 0 è incluso 1 'escluso'
+     documento . getElementById ( "out1" ) . innerHTML = casuale ;
+     documento . getElementById ( "out2" ) . innerHTML = dado ;
+     documento . getElementById ( "out3" ) . innerHTML = parteintera ;
+
+ 
+     }
+     
+</ copione >
+
+
+
+</ corpo >
+</ html >
